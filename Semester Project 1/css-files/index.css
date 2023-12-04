@@ -462,6 +462,12 @@ main {
     margin: 0 auto;
 }
 
+.section-container {
+    width: 100%;
+    max-width: var(--body-width);
+    margin: 0 auto;
+}
+
 /* ------------------------------------ ** product cards ** ----------------- */
 
 /* ------------------------------------ ** header ** -----------------------------------------
@@ -708,10 +714,4 @@ p {
     background-color: #845159;
     color: var(--text-white);
     padding: 2rem 1rem;
-}
-
-
-/* ------------------------test ------------------------*/
-#rms1 {
-    display: none;
 }
