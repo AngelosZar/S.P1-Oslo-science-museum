@@ -1,0 +1,458 @@
+:root {
+    /* fonts---both from google but with safe fonds /////adjust sizes afterwards*/
+    --body-font: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
+    --2nd-font: 'Work sans', Tahoma, sans-serif;
+    /*Text colors */
+    --text-dark: #000;
+    --text-white: #fff;
+
+    /* Headings 1-6 */
+    --h1-size: 7.2rem;
+    --h2-size: 5.6rem;
+    --h3-size: 4rem;
+    --h4-size: 3.2rem;
+    --h5-size: 2.8rem;
+    --h6-size: 2.2rem;
+    /* ----spacing-------- */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+    /* color pallete */
+    --background-black: #000;
+    --background-green: #517884;
+    --background-pink: #F4C4BE;
+    --button-primary: #217968;
+
+    /* body//cards //and more */
+    --body-width: 1726px;
+    --body-color-1: #f1f1f1;
+    /* --body-color-2: ; */
+    --card-color-1: #ebebeb;
+    --card-color-2: #F0F0F0;
+    --card-color-3: #F6F5F2;
+    /* add linear color for index*/
+    /* --standard-border-radius: 20px; */
+    --standard-box-shadow: #E2FF8C;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Global styles-------------------------------------
+----------------------------------------------------- */
+body {
+    font-family: var(--body-font);
+    width: 100%;
+    /*------------------- height to 100%  ----------- ????*/
+    height: 100%;
+    box-sizing: border-box;
+    /* padding: var(--spacing-md) 0 0 0; */
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    background-color: var(--body-color-1);
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+main {
+    display: inherit;
+    width: 100%;
+    /* padding: var(--spacing-lg); */
+    height: 100%;
+    box-sizing: border-box;
+    /* padding: var(--spacing-md) 0 0 0; */
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: inherit;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/* change after the texT decoraTion for hover and active state */
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* typography------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--2nd-font);
+    margin: 0;
+    width: 100%;
+    /* letter-spacing: ;   might need it */
+}
+
+h1 {
+    font-size: var(--h1-size);
+    font-weight: 500;
+    line-height: smAll;
+}
+
+h2 {
+    font-size: var(--h2-size);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: var(--h3-size);
+    font-weight: 500;
+
+}
+
+h4 {
+    font-size: var(--h3-size);
+    font-weight: 500;
+}
+
+h5 {
+    font-size: var(--h5-size);
+    font-weight: 500;
+}
+
+h6 {
+    font-size: var(--h6-size);
+    font-weight: 500;
+}
+
+/* check how it looks in the end resault */
+p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: var var(--spacing-md 0);
+}
+
+hr {
+    border: 2px solid white;
+}
+
+/* ------------------------------------ ** header ** -----------------------------------------
+-------------------------------------------------------------------------------------------- */
+header {
+    box-sizing: border-box;
+    background-color: black;
+    max-width: var(--body-width);
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    margin: 2rem 5rem 2rem 5rem;
+    max-height: 100px;
+    display: flex
+}
+
+/* adjust margin on the right */
+.logo img {
+    max-height: 100px;
+    display: flex
+}
+
+.burger-icon {
+    display: flex;
+    margin: 2rem 5rem 2rem 0;
+    max-height: 80px;
+}
+
+nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked~nav {
+    display: block;
+    z-index: 1;
+}
+
+nav a:hover {
+    color: var(--background-green);
+}
+
+nav a {
+    display: block;
+    color: var(--text-white);
+    font-size: var(--h3-size);
+    padding: 1rem;
+    z-index: 1;
+    background: #000;
+    margin: 2rem;
+
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    background-color: var(--background-black);
+    padding: 1rem 2rem;
+    z-index: 1;
+    top: 160px;
+    right: 0px;
+    padding: 8rem;
+}
+
+/* ------------------------------------ ** footer ** -----------------------------------------
+-------------------------------------------------------------------------------------------- */
+footer {
+    box-sizing: border-box;
+    max-width: var(--body-width);
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.social-on-footer li {
+    display: inline-block;
+    padding: 0 1rem 1rem 0;
+}
+
+.newsletter-on-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.newsletter-on-footer span:last-child {
+    padding-left: 10rem;
+}
+
+.hr-decorative-footer {
+    padding: 1rem 0;
+}
+
+.more-info-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo-on-footer {
+    display: inline;
+    max-width: 180px;
+    object-fit: contain;
+    align-self: center;
+}
+
+footer li {
+    font-size: 18px;
+    padding: 0.6em 0;
+}
+
+footer li h6 {
+    font-size: var(--h5-size);
+    font-weight: 800;
+
+}
+
+/* ------------------------------------ ** primary  button ** -----------------------------------------
+-------------------------------------------------------------------------------------------- */
+.primary-button {
+    font-family: var(--2nd-font);
+    font-size: 1.3em;
+    font-weight: 500;
+    background-color: var(--button-primary);
+    color: var(--text-white);
+    padding: 0.3em 1em;
+    border-radius: 0.5em;
+    box-shadow: 2px 4px 5px var(--standard-box-shadow);
+    transition: all 0.2s ease;
+    border: 2px solid var(--standard-box-shadow);
+}
+
+.primary-button>a {
+    color: var(--text-white);
+}
+
+.primary-button:hover {
+    background-color: blue;
+    cursor: pointer;
+    border: 3px solid black;
+    box-shadow: 2px 4px 5px black;
+}

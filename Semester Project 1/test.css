@@ -1,0 +1,385 @@
+:root {
+    /* fonts---both from google but with safe fonds /////adjust sizes afterwards*/
+    --body-font: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
+    --2nd-font: 'Work sans', Tahoma, sans-serif;
+    /*Text colors */
+    --text-dark: #000;
+    --text-white: #fff;
+
+    /* Headings 1-6 */
+    --h1-size: 7.2rem;
+    --h2-size: 5.6rem;
+    --h3-size: 4rem;
+    --h4-size: 3.2rem;
+    --h5-size: 2.8rem;
+    --h6-size: 2.2rem;
+    /* ----spacing-------- */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+    /* color pallete */
+    --background-black: #000;
+    --background-green: #517884;
+    --background-pink: #F4C4BE;
+    --button-primary: #217968;
+
+    /* body//cards //and more */
+    --body-width: 1726px;
+    --body-color-1: #f1f1f1;
+    /* --body-color-2: ; */
+    --card-color-1: #ebebeb;
+    --card-color-2: #F0F0F0;
+    --card-color-3: #F6F5F2;
+    /* add linear color for index*/
+    /* --standard-border-radius: 20px; */
+    --standard-box-shadow: #E2FF8C;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Global styles-------------------------------------
+----------------------------------------------------- */
+body {
+    font-family: var(--body-font);
+    width: 100%;
+    /*------------------- height to 100%  ----------- ????*/
+    height: 100%;
+    box-sizing: border-box;
+    color: var(--text-dark);
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    background-color: var(--body-color-1);
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+main {
+    max-width: var(--body-width);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: var(--text-dark);
+    padding: 100px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* align-items: center; */
+}
+
+a {
+    color: inherit;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/* change after the texT decoraTion for hover and active state */
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+
+
+/* typography------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--2nd-font);
+    margin: 0;
+    width: 100%;
+    /* letter-spacing: ;   might need it */
+}
+
+h1 {
+    font-size: var(--h1-size);
+    font-weight: 500;
+    line-height: smAll;
+}
+
+h2 {
+    font-size: var(--h2-size);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: var(--h3-size);
+    font-weight: 500;
+
+}
+
+h4 {
+    font-size: var(--h3-size);
+    font-weight: 500;
+}
+
+h5 {
+    font-size: var(--h5-size);
+    font-weight: 500;
+}
+
+h6 {
+    font-size: var(--h6-size);
+    font-weight: 500;
+}
+
+/* check how it looks in the end resault */
+p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: var var(--spacing-md 0);
+}
+
+hr {
+    border: 2px solid white;
+}
+
+
+/* ------------------------test ------------------------*/
+.container {
+    max-width: 1726px;
+}
+
+.two-column-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 5px solid black;
+}
+
+.basic-card {
+    max-width: 500px;
+    padding: 50px;
+}
+
+.text-box {
+    background: #217968;
+}
+
+p {
+    padding: 40px;
+}
+
+h4 {
+    padding: 40px;
+}
+
+/* ------------------------test ------------------------*/
+.containers {
+    display: grid;
+    max-width: 1726px;
+}
+
+.twocolumngrid {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 2;
+    border: 5px solid green;
+    gap: 5rem;
+}
+
+.basiccard {
+    display: grid;
+    max-width: 400px;
+    border: 5px solid red;
+}
+
+.conta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    max-width: 1700px;
+    gap: 2rem;
+}
+
+.first {}
+
+.second {
+    background-color: #E2FF8C;
+    object-fit: cover;
+}
+
+.third {
+    background-color: red;
+}
+
+.forth {
+    background-color: blue;
+}
+
+.test1 {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+}
+
+.test3 {
+    text-align: center;
+    max-width: 700px;
+    background-color: #F4C4BE;
+}
+
+.read-more_less-b {}
