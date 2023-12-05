@@ -586,8 +586,6 @@ article {
 
 .two-column>.column-right p {
     padding: 2rem 3rem 0 3rem;
-
-
 }
 
 .two-column.card-horizontal {
@@ -614,33 +612,7 @@ article {
 
 
 
-
-/* yest */
-/* .card-vertical {
-    flex-direction: column;
-    max-width: 700px;
-    justify-content: space-between;
-}
-
-.card-vertical h5,
-h6 {
-    padding-top: 3rem;
-}
-
-.card-vertical p {
-    padding-bottom: 2rem;
-}
-
-.vertical-container {
-    align-items: center;
-}
-
-.section-container.vertical-container {
-    justify-content: center;
-    align-content: space-around;
-} */
-
-/* ------------------------test ------------------------*/
+/* ------------------------vtwo column vertical ------------------------*/
 .two-column-vertical {
     display: flex;
     justify-content: center;
@@ -650,7 +622,7 @@ h6 {
 .basic-card {
     max-width: 700px;
     height: auto;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .basic-card>img {
@@ -673,6 +645,6 @@ h6 {
     padding-bottom: 2rem;
 }
 
-/* p {
-    line-height: 1.8;
-} */
+
+/* ------------------------three column layout ------------------------*/
+.t3clt {}
