@@ -456,13 +456,19 @@ footer li h6 {
 .section-container {
     width: 100%;
     max-width: 90%;
-    margin: 0 auto;
+    margin: 8rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.section-container2 {
+    margin: 0 auto 8rem auto;
+}
 
 .two-column {
     display: flex;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     justify-content: space-evenly;
     align-items: center;
 }
@@ -514,10 +520,12 @@ footer li h6 {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+    margin: 0 auto;
 }
 
 .basic-card {
     max-width: 700px;
+    width: 50%;
     height: auto;
     padding: 0 1rem 3rem 1rem;
 }
@@ -542,6 +550,40 @@ h6 {
     padding-bottom: 2rem;
 }
 
-.cont-p-three-cards {
-    padding: 6rem 0 6rem 0;
+/* ------------------------------------ ** read more toggle ** ----------------- */
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    /* max-height: 999em; */
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: 'Show more';
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: 'Show less';
+}
+
+.read-more-trigger {
+    line-height: 3;
+
+}
+
+/* ------------------------------------ ** main** ----------------- */
+.contribute-inro {
+    padding: 5% 10%;
+    text-align: center;
+    margin: 6rem auto 0 auto;
 }

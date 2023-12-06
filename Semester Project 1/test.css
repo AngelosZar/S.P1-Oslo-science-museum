@@ -622,6 +622,7 @@ article {
 .basic-card {
     max-width: 700px;
     height: auto;
+    margin: 1rem;
     /* padding: 1rem; */
 }
 
@@ -647,4 +648,163 @@ h6 {
 
 
 /* ------------------------three column layout ------------------------*/
-.t3clt {}
+/* img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+} */
+
+.btn {
+    background-color: white;
+    border: 1px solid @gray-light;
+    //border-radius: 1rem;
+    color: @gray-dark;
+    padding: 0.5rem;
+    text-transform: lowercase;
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.cards__item {
+    display: flex;
+    padding: 1rem;
+
+    @media(min-width: 40rem) {
+        width: 50%;
+    }
+
+    @media(min-width: 56rem) {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* &:hover {
+        .card__image {
+            filter: contrast(100%);
+        }
+    } */
+}
+
+.card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    /* filter: contrast(70%);
+    //filter: saturate(180%);
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(.43, .41, .22, .91);
+    ; */
+
+    /* &::before {
+        content: "";
+        display: block;
+        padding-top: 56.25%; // 16:9 aspect ratio
+    } */
+
+    @media(min-width: 40rem) {
+        /* &::before {
+            padding-top: 66.6%; // 3:2 aspect ratio
+        } */
+    }
+}
+
+.card__image--flowers {
+    background-image: url(https://unsplash.it/800/600?image=82);
+}
+
+.card__image--river {
+    background-image: url(https://unsplash.it/800/600?image=11);
+}
+
+.card__image--record {
+    background-image: url(https://unsplash.it/800/600?image=39);
+}
+
+.card__image--fence {
+    background-image: url(https://unsplash.it/800/600?image=59);
+}
+
+.card__title {
+    color: black;
+    font-size: var(--h5-size);
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-bottom: 1rem;
+    /* text-transform: uppercase; */
+}
+
+.card__text {
+    flex: 1 1 auto;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
+/* ------------------------three column layout ------------------------*/
+/* .two-column-left {
+    margin: 2rem;
+} */
+.container {
+    width: 90%;
+    max-width: var(--body-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    flex-wrap: wrap;
+}
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-section .card {
+    flex: 1;
+    margin: 1rem 3rem;
+}
+
+.cardtest {}
+
+.cardtest img {
+    max-width: 500px;
+    flex: 1;
+    margin: 1rem 3rem;
+}
+
+.card-title {}
+
+.card-text {}
+
+/* ------------------------three column layout ------------------------*/
+/* ------------------------three column layout ------------------------*/
