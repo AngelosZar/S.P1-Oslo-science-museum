@@ -808,3 +808,89 @@ h6 {
 
 /* ------------------------three column layout ------------------------*/
 /* ------------------------three column layout ------------------------*/
+
+.container {
+    inline-size: min(100% - 4rem, 70rem);
+    margin-inline: auto;
+}
+
+.flow {
+    display: grid;
+    gap: var(--size-3);
+}
+
+.page-header {
+    padding-block: var(--size-9);
+    margin-block-end: var(--size-9);
+    background: var(--gradient-16);
+    color: var(--gray-0);
+    box-shadow: var(--shadow-2);
+}
+
+.page-title {
+    font-size: var(--font-size-fluid-3);
+}
+
+.page-subtitle {
+    font-size: var(--font-size-fluid-1);
+}
+
+.section-title {
+    padding-inline-start: var(--size-6);
+    margin-block: var(--size-9) var(--size-3);
+}
+
+
+/* ------------------------media scroller ------------------------*/
+
+
+.media-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 32%;
+    gap: 1rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    background-color: var(--background-black);
+}
+
+.media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    padding: 1rem;
+    /* background-color: red; */
+    border-radius: 5px;
+    box-shadow: #217968;
+}
+
+.media-element>img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    /* aspect-ratio: 9/16; */
+    object-fit: cover;
+}
+
+.media-element p {
+    padding: 1rem 0;
+    font-size: 2.4rem;
+    color: var(--text-white);
+    text-align: center;
+}
+
+/* .container {
+    inline-size: min(100% - 4rem, 70rem);
+    margin-inline: auto;
+} */
+
+/* .flow {
+    display: grid;
+    gap: var(--size-3);
+} */
+
+/* .page-header {
+    padding-block: var(--size-9);
+    margin-block-end: var(--size-9);
+    background: var(--gradient-16);
+    color: var(--gray-0);
+    box-shadow: var(--shadow-2);
+} */

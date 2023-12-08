@@ -534,7 +534,7 @@ footer li h6 {
 }
 
 .basic-card {
-    max-width: 700px;
+    max-width: 500px;
     width: 50%;
     height: auto;
     padding: 0 1rem 3rem 1rem;
@@ -625,8 +625,6 @@ h6 {
 /* –––––––––––––––––––– article1 ––––––––––––––––––––*/
 
 .article1 {
-    background-color: var(--background-black);
-    color: var(--text-white);
     max-width: var(--body-width);
     padding: 5%;
     text-align: center;
@@ -701,32 +699,82 @@ h4 {
 }
 
 /* –––––––––––––––––––– shop section ––––––––––––––––––––*/
-.shop-section {
-    /* padding: 4rem;
-    max-width: var(--body-width);
-    box-sizing: border-box; */
+
+.article1.shop-section {
+    padding: 2rem 10%;
 }
 
-.shop-section h2,
-h3,
-h4,
-h5,
-p {
-    /* text-align: center;
-    padding: 2rem 4rem 2rem 4rem;
-    width: 80%; */
+.section-container {
+    padding: 5rem;
+    max-width: 90%;
 }
 
-.shop-section h2,
-h3,
-h4,
-h5,
-p {
-    /* text-align: center;
-    margin: 2rem 4rem 2rem 4rem;
-    max-width: var(--body-width); */
+
+
+/* –––––––––––––––––––– get to us ////contact us––––––––––––––––––––*/
+.label-contact-us {
+    display: block;
+    font-size: var(--h5-size);
+    font-family: var(--2nd-font);
+    margin: 1rem 0 1.5rem 0;
 }
 
-.shop-s-imgs {
-    margin: 5rem;
+.textInput-contact {
+    display: inline-block;
+    margin: 1rem 0 1.5rem 0;
+    border-radius: 5px;
+    border: 2px solid rgba(94, 94, 94, 0.6);
+    width: 60%;
+
+}
+
+::placeholder {
+    color: var(--text-dark);
+    opacity: 0.8;
+    font-size: 1.6rem;
+    font-family: var(--2nd-font);
+
+}
+
+input[type=submit] {
+    display: inline-block;
+}
+
+input[type=textarea] {
+    display: inline-block;
+}
+
+.textInput-contact {
+    display: inline-block;
+}
+
+
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+
+}
+
+.transport-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.transport-options li {
+    font-size: 1.6rem;
+}
+
+.bike-li {
+    justify-self: flex-start;
 }

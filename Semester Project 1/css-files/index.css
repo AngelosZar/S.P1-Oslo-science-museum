@@ -468,6 +468,85 @@ h6 {
 
 }
 
+/*--------------------------------------- media-scroller-------------------------------------------
+---------------------------------------------------------------------------------- */
+.media-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 31%;
+    gap: 1rem;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    background-color: var(--background-black);
+    padding-bottom: 1rem;
+}
+
+.media-element p,
+.media-element-vertical p {
+    padding: 3rem 0 2rem 0;
+    font-size: 2.4rem;
+    color: var(--text-white);
+    text-align: center;
+}
+
+.section-title {
+    /* font-family: var(--2nd-font); */
+    font-weight: 600;
+    padding: 3rem 2rem;
+    max-width: var(--body-width);
+}
+
+/* –––––––––––––––––––– horizontal  scroller /// 
+  ----------------------aspect-ratio: 16 / 9  or 1 / 1––––––––––––––––––––*/
+.media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: white;
+}
+
+.media-element>img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* –––––––––––––––––––– horizontal no scroller /// 
+  ----------------------aspect-ratio: 9 / 16  ––––––––––––––––––––*/
+.media-scroller-vertical {
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+    gap: 2rem;
+    background-color: var(--background-black);
+    padding-bottom: 1rem;
+    padding: 0 2rEm;
+}
+
+.media-elements-vertical {
+    display: grid;
+    grid-template-rows: min-content;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: white;
+    gap: 2rem;
+}
+
+.media-elements-vertical>img {
+    width: 100%;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    object-fit: fil;
+}
+
+.media-element-vertical p {
+    padding: 3rem 0 2rem 0;
+    font-size: 2.4rem;
+    color: var(--text-white);
+    text-align: center;
+}
+
 /* ------------------------------------ ** header ** -----------------------------------------
 -------------------------------------------------------------------------------------------- */
 header {
@@ -674,6 +753,7 @@ article {
     align-self: flex-end;
     padding: var(--spacing-sm) var(--spacing-sm);
 }
+
 
 /*--------------------------------------- media quarries-------------------------------------------
 ---------------------------------------------------------------------------------- */
