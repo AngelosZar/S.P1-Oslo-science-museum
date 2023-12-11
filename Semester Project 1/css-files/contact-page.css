@@ -471,7 +471,7 @@ footer li h6 {
 .section-container {
     width: 100%;
     max-width: 90%;
-    margin: 8rem auto;
+    margin: 8rem auto 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -599,6 +599,7 @@ h6 {
 /* ------------------------------------ ** main ** -----------------------------------------
 -------------------------------------------------------------------------------------------- */
 /* –––––––––––––––––––– ––––––––––––––––––––*/
+
 /* –––––––––––––––––––– hero section ––––––––––––––––––––*/
 .hero-block {
     max-width: 100%;
@@ -626,7 +627,7 @@ h6 {
 
 .article1 {
     max-width: var(--body-width);
-    padding: 5%;
+    padding: 10rem 10rem;
     text-align: center;
     /* margin: 0 auto; */
     box-sizing: border-box;
@@ -640,15 +641,15 @@ h6 {
 /* –––––––––––––––––––– opening hours section ––––––––––––––––––––*/
 .opening-hours {
     display: flex;
-    padding: ;
+    /* padding: ; */
 }
 
 .timetable {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border: 4px solid black;
-    padding: 4rem 4rem 4rem 4rem;
+    /* border: 4px solid black; */
+    padding: 10rem 10rem 10rem 10rem;
 }
 
 .timetable li {
@@ -690,7 +691,9 @@ h4 {
 }
 
 /* –––––––––––––––––––– acessibility sesction ––––––––––––––––––––*/
-.acessibility-s
+.acessibility-s {
+    /* padding: 4rem 0; */
+}
 
 /* –––––––––––––––––––– caffe section ––––––––––––––––––––*/
 .caffe-section {

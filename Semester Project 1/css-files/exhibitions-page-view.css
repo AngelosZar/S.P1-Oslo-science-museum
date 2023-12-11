@@ -670,24 +670,24 @@ h6 {
     position: relative;
 }
 
-.hero-content>h3 {
+/* .hero-content>h3 {
     max-width: 90%;
     color: var(--text-white);
-    /* font-size: var(--h6-size); */
     position: absolute;
     bottom: 5%;
     right: 2rem;
     text-align: center;
-}
+} */
 
 /* –––––––––––––––––––– article1 ––––––––––––––––––––*/
 
 .article1 {
     max-width: var(--body-width);
-    padding: 5% 10% 5% 15%;
+    padding: 5% 20% 5% 20%;
     text-align: center;
-    margin: 10rem auto 10rem auto;
+    margin: 8rem auto 8rem auto;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 article {

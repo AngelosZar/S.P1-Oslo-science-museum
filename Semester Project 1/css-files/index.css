@@ -388,6 +388,7 @@ hr {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+    margin: 0 auto 8rem auto;
 }
 
 .basic-card {
@@ -470,10 +471,15 @@ h6 {
 
 /*--------------------------------------- media-scroller-------------------------------------------
 ---------------------------------------------------------------------------------- */
+.exhibitions-page {
+    margin: 0 auto 8rem auto;
+}
+
 .media-scroller {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 31%;
+    grid-template-rows: 3;
     gap: 1rem;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
@@ -504,6 +510,7 @@ h6 {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: white;
+    /* grid-template-rows: min-content; */
 }
 
 .media-element>img {
@@ -537,7 +544,7 @@ h6 {
     width: 100%;
     aspect-ratio: 9/16;
     object-fit: cover;
-    object-fit: fil;
+    /* object-fit: fil; */
 }
 
 .media-element-vertical p {
@@ -694,7 +701,7 @@ footer li h6 {
     /* max-width: var(--body-width); */
     padding: 5% 10%;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 10rem auto;
 }
 
 article {
