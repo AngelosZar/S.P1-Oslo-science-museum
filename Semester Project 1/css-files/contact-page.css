@@ -693,12 +693,14 @@ h4 {
 /* –––––––––––––––––––– acessibility sesction ––––––––––––––––––––*/
 .acessibility-s {
     /* padding: 4rem 0; */
+    margin: -8rem 0 0 0;
 }
 
 /* –––––––––––––––––––– caffe section ––––––––––––––––––––*/
 .caffe-section {
-    /* max-width: 90%;
-    margin: 10rem; */
+    max-width: 90%;
+    margin: 0 auto 10rem auto;
+
 }
 
 /* –––––––––––––––––––– shop section ––––––––––––––––––––*/
@@ -728,13 +730,12 @@ h4 {
     border-radius: 5px;
     border: 2px solid rgba(94, 94, 94, 0.6);
     width: 60%;
-
 }
 
 ::placeholder {
     color: var(--text-dark);
     opacity: 0.8;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-family: var(--2nd-font);
 
 }

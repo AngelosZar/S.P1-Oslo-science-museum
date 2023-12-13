@@ -572,7 +572,6 @@ h6 {
 
 .read-more-trigger {
     line-height: 3;
-
 }
 
 /*--------------------------------------- media-scroller-------------------------------------------
@@ -683,11 +682,15 @@ h6 {
 
 .article1 {
     max-width: var(--body-width);
-    padding: 5% 20% 5% 20%;
+    padding: 5% 10% 5% 10%;
     text-align: center;
-    margin: 8rem auto 8rem auto;
+    margin: 0 auto 8rem auto;
     box-sizing: border-box;
     line-height: 1.5;
+}
+
+.article1.second {
+    margin: 8rem auto 8rem auto;
 }
 
 article {
@@ -698,8 +701,8 @@ article {
     padding-bottom: var(--spacing-md);
 }
 
-/* –––––––––––––––––––– three imAges/flex container  ––––––––––––––––––––*/
-.three-images-flex {
+/* –––––––––––––––––––– three imAges/flex container tEst  ––––––––––––––––––––*/
+/* .three-images-flex {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -709,11 +712,9 @@ article {
     flex: 1 1 auto;
     box-sizing: border-box;
     max-width: var(--body-width);
-    /* background-size: cover; */
-    /* max-width: 600px; */
-}
+} */
 
-.three-image-flex0title {
+/* .three-image-flex0title {
     padding: 2rem 0;
 }
 
@@ -729,4 +730,11 @@ h3 {
 
 .image-three-column {
     object-fit: cover;
+} */
+/* –––––––––––––––––––– three imAges/flex container tEst  ––––––––––––––––––––*/
+
+/* –––––––––––––––––––– permanent exhibitions ––––––––––––––––––––*/
+#permanent_events>h1 {
+    padding: 0 4rem;
+    font-weight: 500;
 }
