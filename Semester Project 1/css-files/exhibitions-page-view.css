@@ -23,6 +23,8 @@
     --background-green: #517884;
     --background-pink: #F4C4BE;
     --button-primary: #217968;
+    --button-secondary: #7E67F8;
+
 
     /* body//cards //and more */
     --body-width: 1726px;
@@ -544,6 +546,14 @@ h6 {
     margin: 10rem 4rem;
 }
 
+.section-container.horizontal h1,
+h2,
+h3,
+h4 {
+    margin: 4rem 0;
+}
+
+
 /* ------------------------------------ ** read more toggle ** ----------------- */
 .read-more-state {
     display: none;
@@ -653,6 +663,10 @@ h6 {
     text-align: center;
 }
 
+.exhibitions-page h2 {
+    margin: 2rem;
+}
+
 /* ------------------------------------ ** main ** -----------------------------------------
 -------------------------------------------------------------------------------------------- */
 /* –––––––––––––––––––– ––––––––––––––––––––*/
@@ -735,7 +749,7 @@ h3 {
 
 /* –––––––––––––––––––– permanent exhibitions ––––––––––––––––––––*/
 #permanent_events>h1 {
-    padding: 0 4rem;
+    padding: 0 0 0 4rem;
     font-weight: 500;
 }
 
@@ -808,6 +822,8 @@ do only logo */
 }
 
 @media only screen and (max-width:1080px) {
+
+    /* -----------header----------- */
     nav {
         padding: 1rem 2rem;
         top: 130px;
@@ -822,6 +838,16 @@ do only logo */
 }
 
 @media only screen and (max-width:1000px) {
+    :root {
+        --h1-size: 5.6rem;
+        --h2-size: 4rem;
+        --h3-size: 3.2rem;
+        --h4-size: 2.8rem;
+        --h5-size: 2.2rem;
+        --h6-size: 1.9rem;
+    }
+
+    /* -----------get involved section----------- */
     .more-info-footer {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -829,6 +855,34 @@ do only logo */
 
     .logo-on-footer {
         align-self: flex-end;
+    }
+
+    /* ---------------hero entry test ---------------*/
+    .article1 {
+        padding: 3rem 2rem;
+    }
+}
+
+@media only screen and (max-width:895px) {
+
+    /* -----------flex containers-two column layouts----------- */
+    .basic-card {
+        width: 100%;
+    }
+
+    .basic-card h5 {
+        font-size: var(--h4-size);
+    }
+
+    .two-column {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .two-column.card-horizontal h5 {
+        padding: 2rem 0 0 0;
+        font-size: var(--h4-size);
     }
 }
 
@@ -838,14 +892,53 @@ do only logo */
         padding: 0.5rem 1rem;
         top: 120px;
     }
+
+    h1 {
+        font-size: var(--h2-size);
+    }
+
+    h5 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: var(--h4-size);
+    }
+
+    /* -------------------------------grid containers----------- */
+
+    /* -----------special events and exhibitions----------- */
+    .media-scroller-vertical.scroll-2img {
+        grid-auto-flow: column;
+        grid-auto-columns: 47%;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+    }
+
+    .media-element p,
+    .media-element-vertical p {
+        font-size: 2rem;
+    }
+
 }
 
 @media only screen and (max-width:599px) {
     nav {
         top: 100px;
     }
+
+    /* -----------flex containers-two column layouts----------- */
+    .two-column>.column-right p {
+        padding: 2rem 0 0 0;
+    }
+
+    /* ---------------hero entry text ---------------*/
+    .article1>h4 {
+        font-size: var(--h5-size);
+    }
 }
 
+/* ----------------------------- mobile  > 500px ----------------------------- */
 @media only screen and (max-width:500px) {
 
     footer {
@@ -872,9 +965,29 @@ do only logo */
         padding: 0.5rem 2rem;
     }
 
+    /* ---------------hero entry text ---------------*/
+    .article1 {
+        padding: 2rem 2rem;
+    }
+
+    /* -----------permanent exhibitions----------- */
+    .media-scroller {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 72%;
+    }
+
     .newsletter-on-footer span:last-child {
         padding-left: 0rem;
     }
-}
 
-/* ----------------------------- mobile  > 500px ----------------------------- */
+    .section-container.horizontal>h1 {
+        font-weight: 600;
+    }
+
+    /* special events and exhibitions */
+    .exhibitions-page a {
+        margin: 2rem;
+        padding-right: 2rem;
+    }
+}

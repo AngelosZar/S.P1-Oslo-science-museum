@@ -914,6 +914,11 @@ do only logo */
     .two-column.card-horizontal {
         flex-wrap: wrap;
     }
+
+    .two-column.card-horizontal h5 {
+        padding: 2rem 0 0 0;
+        font-size: var(--h4-size);
+    }
 }
 
 /* ----------------------------- tablet  ----------------------------- */
@@ -933,7 +938,6 @@ do only logo */
 
     h2 {
         font-size: var(--h4-size);
-
     }
 
     /* -----------flex containers-two column layouts----------- */
@@ -949,11 +953,6 @@ do only logo */
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-    }
-
-    .two-column.card-horizontal h5 {
-        padding: 2rem 0 0 0;
-        font-size: var(--h4-size);
     }
 
     /* -------------------------------grid containers----------- */
@@ -1035,6 +1034,10 @@ do only logo */
         padding: 0.5rem 2rem;
     }
 
+    .newsletter-on-footer h3 {
+        padding-right: 1rem;
+    }
+
     /* -----------permanent exhibitions----------- */
     .media-scroller {
         display: grid;
@@ -1045,6 +1048,21 @@ do only logo */
     .newsletter-on-footer span:last-child {
         padding-left: 0rem;
     }
+
+    /* -----------flex containers-two column layouts----------- */
+    .text-box {
+        padding: 2rem 2rem;
+    }
+
+    .two-column.card-horizontal>p {
+        padding: 2rem 0 0 0;
+    }
 }
 
 /* ----------------------------- mobile  > 500px ----------------------------- */
+@media only screen and (max-width:410px) {
+    .article1 {
+        margin: 0 auto 4rem auto;
+    }
+
+}
