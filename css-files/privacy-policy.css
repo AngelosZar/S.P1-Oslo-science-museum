@@ -1,7 +1,7 @@
 :root {
     /* fonts---both from google but with safe fonds /////adjust sizes afterwards*/
     --body-font: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
-    --2nd-font: 'Work sans', Tahoma, sans-serif;
+    --2nd-font: 'Work Sans', Tahoma, sans-serif;
     /*Text colors */
     --text-dark: #000;
     --text-white: #fff;
@@ -259,7 +259,7 @@ h6 {
 h1 {
     font-size: var(--h1-size);
     font-weight: 500;
-    line-height: smAll;
+    line-height: small;
 }
 
 h2 {
@@ -292,7 +292,7 @@ h6 {
 p {
     font-size: 1.8rem;
     font-weight: 400;
-    margin: var var(--spacing-md 0);
+    margin: var(--spacing-md);
 }
 
 hr {
@@ -449,7 +449,7 @@ footer li h6 {
 }
 
 .primary-button:hover {
-    background-color: blue;
+    background-color: var(--button-secondary);
     cursor: pointer;
     border: 3px solid black;
     box-shadow: 2px 4px 5px black;
@@ -507,14 +507,15 @@ em {
 
 /* try to work with rem or em test
 do only logo */
-.logo img {
-    @media(max-width: 67rem) {
+
+@media(max-width: 67rem) {
+    .logo img {
         width: 90%;
     }
 }
 
-.logo {
-    @media(max-width: 30rem) {
+@media(max-width: 30rem) {
+    .logo {
         width: 100%;
         margin: 1rem;
         max-height: 100px;
@@ -522,8 +523,8 @@ do only logo */
     }
 }
 
-.burger-icon {
-    @media(max-width: 67rem) {
+@media(max-width: 67rem) {
+    .burger-icon {
         width: 50%;
         max-height: 60px;
         padding-left: 3rem;
@@ -555,7 +556,7 @@ do only logo */
     }
 
     footer h4 {
-        font-size: var(h6);
+        font-size: var(--h6-size);
     }
 
     footer li h6 {
@@ -646,7 +647,7 @@ do only logo */
     }
 
     footer h4 {
-        font-size: var(h6);
+        font-size: var(--h6-size);
     }
 
     footer li h6 {
