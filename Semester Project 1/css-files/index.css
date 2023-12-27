@@ -941,6 +941,10 @@ do only logo */
     }
 
     /* -----------flex containers-two column layouts----------- */
+    .section-container {
+        margin-top: 0;
+    }
+
     .basic-card {
         width: 100%;
     }

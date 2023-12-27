@@ -461,7 +461,7 @@ footer li h6 {
 }
 
 .primary-button:hover {
-    background-color: blue;
+    background-color: var(--button-secondary);
     cursor: pointer;
     border: 3px solid black;
     box-shadow: 2px 4px 5px black;
@@ -617,24 +617,30 @@ h6 {
     position: relative;
 }
 
-.hero-content>h1 {
+/* .hero-content>h1 {
     max-width: 90%;
     color: var(--text-white);
-    /* font-size: var(--h6-size); */
     position: absolute;
     bottom: 5%;
     right: 5%;
     text-align: center;
-}
+} */
 
 /* –––––––––––––––––––– article1 ––––––––––––––––––––*/
 
 .article1 {
     max-width: var(--body-width);
-    padding: 10rem 10rem;
+    padding: 4rem 10rem 10rem 10rem;
     text-align: center;
     /* margin: 0 auto; */
     box-sizing: border-box;
+}
+
+.article1 h1 {
+    padding-top: 0;
+    padding-bottom: var(--spacing-md);
+    line-height: 1.4;
+
 }
 
 .article1 h6 {
@@ -645,6 +651,7 @@ h6 {
 /* –––––––––––––––––––– opening hours section ––––––––––––––––––––*/
 .opening-hours {
     display: flex;
+    flex-wrap: wrap;
     /* padding: ; */
 }
 
@@ -677,11 +684,13 @@ h4 {
     max-width: 80%;
     border-radius: var(--standard-border-radius);
     margin: 0 auto;
+    text-align: center;
 }
 
 .Admission-s h3,
 h4 {
-    padding: 2rem 4rem 2rem 4rem;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .Admission-s p {
@@ -711,6 +720,7 @@ h3,
 h4 {
     text-align: center;
     padding-top: 5rem;
+    font-weight: 600;
 }
 
 .section-container {
@@ -844,6 +854,21 @@ do only logo */
         padding: 1rem 2rem;
     }
 
+    /* -----------main----------- */
+    /* -----------main----------- */
+    .timetable {
+        padding: 2rem;
+    }
+
+
+    .article1 {
+        padding: 2rem 4rem 4rem 4rem;
+    }
+
+    .Admission-s p {
+        padding: 2rem 3rem;
+    }
+
     /* -----------footer----------- */
     .logo-on-footer {
         max-width: 140px;
@@ -870,6 +895,16 @@ do only logo */
 }
 
 @media only screen and (max-width:1080px) {
+    :root {
+        --h1-size: 5.6rem;
+        --h2-size: 4rem;
+        --h3-size: 3.2rem;
+        --h4-size: 2.8rem;
+        --h5-size: 2.2rem;
+        --h6-size: 1.9rem;
+    }
+
+    /* -----------header----------- */
     nav {
         padding: 1rem 2rem;
         top: 130px;
@@ -881,9 +916,15 @@ do only logo */
         font-size: 3rem;
         padding: 0.5rem 1rem;
     }
+
+    form h5 {
+        font-size: var(--h4-size);
+    }
 }
 
 @media only screen and (max-width:1000px) {
+
+    /* -----------footer----------- */
     .more-info-footer {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -894,13 +935,81 @@ do only logo */
     }
 }
 
+@media only screen and (max-width:895px) {
+
+    /* -----------flex containers-two column layouts----------- */
+    .section-container {
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        padding: 4rem 2rem;
+        max-width: 90%;
+    }
+
+    .two-column.card-horizontal {
+        flex-wrap: wrap;
+    }
+
+    .two-column.card-horizontal h5 {
+        padding: 2rem 0 0 0;
+        font-size: var(--h4-size);
+    }
+
+    .two-column>.column-right p {
+        padding: 2rem 3rem 0 3rem;
+        margin: 0 0 2rem 0;
+    }
+
+    .basic-card {
+        width: 100%;
+    }
+
+    .text-box {
+        text-align: center;
+        padding: 2rem 2rem;
+    }
+
+}
+
 /* ----------------------------- tablet  ----------------------------- */
 @media only screen and (max-width:740px) {
     nav {
         padding: 0.5rem 1rem;
         top: 120px;
     }
+
+    .caffe-section h2 {
+        font-size: var(--h3-size);
+    }
+
+    .shop-section-text>h2,
+    h3,
+    h4 {
+        box-sizing: border-box;
+    }
+
+    .shop-section-text p {
+        /* margin: 0 auto; */
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    h1 {
+        font-size: var(--h2-size);
+    }
+
+    h5 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: var(--h4-size);
+    }
 }
+
+/* -----------flex containers-two column layouts----------- */
+/* .section-container {
+        margin: 0 auto;
+    } */
 
 @media only screen and (max-width:599px) {
     nav {
@@ -910,6 +1019,7 @@ do only logo */
 
 @media only screen and (max-width:500px) {
 
+    /* -----------footer----------- */
     footer {
         padding: 2rem 2rem;
     }
@@ -936,6 +1046,31 @@ do only logo */
 
     .newsletter-on-footer span:last-child {
         padding-left: 0rem;
+    }
+
+    /* -----------main----------- */
+    .text-box {
+        padding: 2rem 1rem;
+    }
+
+    .text-box li {
+        font-size: 1.4rem;
+    }
+
+    .transport-title {
+        font-weight: 800;
+        line-height: 1rem;
+    }
+
+    .acessibility-s .column-right p {
+        padding: 1rem 0;
+    }
+
+    .section-container {
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        padding: 2rem 2rem;
+        max-width: 90%;
     }
 }
 
