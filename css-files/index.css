@@ -695,13 +695,15 @@ footer li h6 {
 /* ------------------------------------ ** main ** -----------------------------------------
 -------------------------------------------------------------------------------------------- */
 /* –––––––––––––––––––– hero section ––––––––––––––––––––*/
-
+.hero-block {
+    min-height: 90vh;
+}
 
 /* –––––––––––––––––––– article1 ––––––––––––––––––––*/
 .article1 {
     background-color: var(--background-black);
     color: var(--text-white);
-    padding: 5% 10%;
+    padding: 8rem 5%;
     text-align: center;
     margin: 0 auto 10rem auto;
     /* padding: 8rem 0; */
