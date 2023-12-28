@@ -296,6 +296,8 @@ hr {
     border: 2px solid white;
 }
 
+object-fit: fill;
+
 /* ------------------------------------------------------- ** componeNts ** ------------------------------------------------------------------------------------------- */
 /* –––––––––––––––––––––––––––––––––––––primary-button––––––––––––––––––––––––––––––––––––– */
 .primary-button {
@@ -336,7 +338,6 @@ hr {
     justify-content: center;
     align-items: center;
 }
-
 
 .two-column {
     display: flex;
