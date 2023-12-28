@@ -1,7 +1,7 @@
 :root {
     /* fonts---both from google but with safe fonds /////adjust sizes afterwards*/
     --body-font: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
-    --2nd-font: 'Work Sans', Tahoma, sans-serif;
+    --second-font: 'Work Sans', Tahoma, sans-serif;
     /*Text colors */
     --text-dark: #000;
     --text-white: #fff;
@@ -252,7 +252,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--2nd-font);
+    font-family: var(--second-font);
     margin: 0;
     width: 100%;
     /* letter-spacing: ;   might need it */
@@ -261,7 +261,7 @@ h6 {
 h1 {
     font-size: var(--h1-size);
     font-weight: 500;
-    line-height: small;
+    line-height: 1.2;
 }
 
 h2 {
@@ -294,7 +294,7 @@ h6 {
 p {
     font-size: 1.8rem;
     font-weight: 400;
-    margin: var(--spacing-md);
+    /* margin: var(--spacing-md); */
 }
 
 hr {
@@ -434,7 +434,7 @@ footer li h6 {
 /* ------------------------------------ ** primary  button ** -----------------------------------------
 -------------------------------------------------------------------------------------------- */
 .primary-button {
-    font-family: var(--2nd-font);
+    font-family: var(--second-font);
     font-size: 1.3em;
     font-weight: 500;
     background-color: var(--button-primary);

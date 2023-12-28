@@ -1,7 +1,7 @@
 :root {
     /* fonts---both from google but with safe fonds /////adjust sizes afterwards*/
     --body-font: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
-    --2nd-font: 'Work Sans', Tahoma, sans-serif;
+    --second-font: 'Work Sans', Tahoma, sans-serif;
     /*Text colors */
     --text-dark: #000;
     --text-white: #fff;
@@ -207,7 +207,6 @@ body {
     background-color: var(--body-color-1);
     position: relative;
     overflow-x: hidden;
-
 }
 
 main {
@@ -254,7 +253,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--2nd-font);
+    font-family: var(--second-font);
     margin: 0;
     width: 100%;
     /* letter-spacing: ;   might need it */
@@ -263,7 +262,7 @@ h6 {
 h1 {
     font-size: var(--h1-size);
     font-weight: 500;
-    line-height: small;
+    line-height: 1.2;
 }
 
 h2 {
@@ -296,7 +295,7 @@ h6 {
 p {
     font-size: 1.6rem;
     font-weight: 400;
-    margin: var var(--spacing-md 0);
+    margin: var(--spacing-md);
     line-height: 1.4;
 }
 
@@ -441,7 +440,7 @@ footer li h6 {
 /* ------------------------------------ ** primary  button ** -----------------------------------------
 -------------------------------------------------------------------------------------------- */
 .primary-button {
-    font-family: var(--2nd-font);
+    font-family: var(--second-font);
     font-size: 1.3em;
     font-weight: 500;
     background-color: var(--button-primary);
@@ -610,7 +609,7 @@ h4 {
 }
 
 .section-title {
-    /* font-family: var(--2nd-font); */
+    /* font-family: var(--second-font); */
     font-weight: 600;
     padding: 3rem 2rem;
     max-width: var(--body-width);

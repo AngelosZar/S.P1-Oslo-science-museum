@@ -1,7 +1,7 @@
 :root {
     /* fonts---both from google but with safe fonds /////adjust sizes afterwards*/
     --body-font: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
-    --2nd-font: 'Work Sans', Tahoma, sans-serif;
+    --second-font: 'Work Sans', Tahoma, sans-serif;
     /*Text colors */
     --text-dark: #000;
     --text-white: #fff;
@@ -256,7 +256,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: var(--2nd-font);
+    font-family: var(--second-font);
     margin: 0;
     width: 100%;
     /* letter-spacing: ;   might need it */
@@ -265,7 +265,7 @@ h6 {
 h1 {
     font-size: var(--h1-size);
     font-weight: 500;
-    line-height: small;
+    line-height: 1.2;
 }
 
 h2 {
@@ -448,7 +448,7 @@ footer li h6 {
 /* ------------------------------------ ** primary  button ** -----------------------------------------
 -------------------------------------------------------------------------------------------- */
 .primary-button {
-    font-family: var(--2nd-font);
+    font-family: var(--second-font);
     font-size: 1.3em;
     font-weight: 500;
     background-color: var(--button-primary);
@@ -752,7 +752,7 @@ h4 {
 .label-contact-us {
     display: block;
     font-size: var(--h5-size);
-    font-family: var(--2nd-font);
+    font-family: var(--second-font);
     margin: 1rem 0 1.5rem 0;
 }
 
@@ -768,7 +768,7 @@ h4 {
     color: var(--text-dark);
     opacity: 0.8;
     font-size: 1.4rem;
-    font-family: var(--2nd-font);
+    font-family: var(--second-font);
 
 }
 
@@ -1036,7 +1036,7 @@ do only logo */
     }
 
     footer h4 {
-        font-size: var(h6);
+        font-size: var(--h6-size);
     }
 
     footer li h6 {
