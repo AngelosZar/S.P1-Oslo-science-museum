@@ -293,7 +293,7 @@ h6 {
 
 /* check how it looks in the end resault */
 p {
-    font-size: 1.6rem;
+    font-size: 1.rem;
     font-weight: 400;
     margin: var(--spacing-md);
     line-height: 1.4;
@@ -678,7 +678,7 @@ h4 {
     background-image: url(../images/Exhibitions-page/rodolfo-cuadros-WNk-f-TnZDw-unsp.jpg);
     max-width: var(--body-width);
     width: 100%;
-    min-height: 80vh;
+    min-height: 75vh;
     background-size: cover;
     background-position-x: center;
     background-position-y: bottom;

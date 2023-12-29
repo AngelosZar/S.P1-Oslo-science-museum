@@ -556,7 +556,7 @@ footer li h6 {
     text-align: center;
     /* background-color: #517884;
     color: var(--text-white); */
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
 }
 
 .text-box p {
@@ -601,7 +601,6 @@ h6 {
 
 .read-more-trigger {
     line-height: 3;
-
 }
 
 /* ------------------------------------ ** main ** -----------------------------------------
@@ -614,7 +613,7 @@ h6 {
     background-image: url(../images/contact-page/ant-rozetsky-Lt8rGTnhW2w-unsplas.jpg);
     max-width: var(--body-width);
     width: 100%;
-    min-height: 80vh;
+    min-height: 75vh;
     background-size: cover;
     background-position-x: center;
     background-position-y: bottom;
@@ -804,16 +803,33 @@ input[type=textarea] {
 
 .transport-options {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.transport-options li {
+.transport-options {
     font-size: 1.6rem;
 }
 
-.bike-li {
-    justify-self: flex-start;
+.text-box>.transport-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+li.transport-title {
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+li.transport-title:last-child {
+    padding-top: 1rem;
+}
+
+/* .transport-options>li:last-child {
+    padding-top: 4rem;
+} */
 
 /*--------------------------------------- media quarries-------------------------------------------
 ---------------------------------------------------------------------------------- */
@@ -1056,17 +1072,9 @@ do only logo */
     }
 
     /* -----------main----------- */
-    .text-box {
-        padding: 2rem 1rem;
-    }
-
-    .text-box li {
-        font-size: 1.4rem;
-    }
-
-    .transport-title {
-        font-weight: 800;
-        line-height: 1rem;
+    .text-box h5 {
+        font-size: var(--h5-size);
+        padding-bottom: 2rem;
     }
 
     .acessibility-s .column-right p {

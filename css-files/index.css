@@ -288,10 +288,10 @@ h6 {
 
 /* check how it looks in the end resault */
 p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
     /* margin: var(--spacing-md); */
-    line-height: 1.3;
+    line-height: 1.2;
 }
 
 hr {
@@ -408,7 +408,7 @@ hr {
 
 .text-box {
     text-align: center;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
 }
 
 .text-box p {
@@ -697,8 +697,21 @@ footer li h6 {
 /* ------------------------------------ ** main ** -----------------------------------------
 -------------------------------------------------------------------------------------------- */
 /* –––––––––––––––––––– hero section ––––––––––––––––––––*/
-.hero-section {
-    min-height: 90vh;
+/* .hero-section {
+    min-height: 70vh;
+    width: auto;
+} */
+
+.article-onHero {
+    background-color: var(--background-black);
+    color: var(--text-white);
+    padding: 8% 5%;
+    margin: 0 auto 10% auto;
+    text-align: center;
+}
+
+.article-onHero h1 {
+    padding-bottom: var(--spacing-lg);
 }
 
 /* –––––––––––––––––––– article1 ––––––––––––––––––––*/
@@ -709,10 +722,6 @@ footer li h6 {
     text-align: center;
     margin: 0 auto 10rem auto;
     /* padding: 8rem 0; */
-}
-
-.article-onHero {
-    padding: 10rem 5%;
 }
 
 article {
@@ -743,7 +752,7 @@ article {
 .get-involved-s {
     background-image: url(../images/homepage/yuya-hata-9AJM1uC1bj8-unsplash.jpg);
     max-width: 70%;
-    min-height: 25vh;
+    min-height: auto;
     background-size: cover;
     background-position-x: center;
     background-position-y: top;
@@ -773,10 +782,11 @@ article {
     justify-content: center;
     align-items: center;
     background: rgba(255, 255, 255, 0.6);
-    max-width: 50%;
+    max-width: 60%;
     max-height: 50%;
     padding: 1rem 4rem;
     border-radius: 40px;
+    margin: 3rem auto;
 }
 
 .get-involved-s h3 {
@@ -820,7 +830,6 @@ do only logo */
     }
 }
 
-
 @media(max-width: 30rem) {
     .logo {
         width: 100%;
@@ -829,7 +838,6 @@ do only logo */
         display: flex;
     }
 }
-
 
 @media(max-width: 67rem) {
     .burger-icon {
@@ -906,13 +914,13 @@ do only logo */
     }
 
     /* -----------get involved section----------- */
-    .get-involved-s {
+    /* .get-involved-s {
         min-height: 20vh;
     }
 
     .get-involved-content {
         max-width: 70%;
-    }
+    } */
 
     .more-info-footer {
         flex-wrap: wrap;
@@ -925,6 +933,9 @@ do only logo */
 }
 
 @media only screen and (max-width:895px) {
+    .article-onHero h1 {
+        padding-bottom: var(--spacing-md);
+    }
 
     /* -----------flex containers-two column layouts----------- */
     .two-column.card-horizontal {
@@ -956,6 +967,11 @@ do only logo */
         font-size: var(--h4-size);
     }
 
+    /* –––––––––––––––––––– get involved section ––––––––––––––––––––*/
+    .get-involved-s {
+        max-width: 80%;
+    }
+
     /* -----------flex containers-two column layouts----------- */
     .section-container {
         margin-top: 0;
@@ -973,6 +989,13 @@ do only logo */
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+    }
+
+    .two-column-vertical {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin: 0 auto 4rem auto;
     }
 
     /* -------------------------------grid containers----------- */
@@ -1013,7 +1036,7 @@ do only logo */
     }
 
     .get-involved-s p {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -1058,6 +1081,12 @@ do only logo */
         padding-right: 1rem;
     }
 
+    /* –––––––––––––––––––– get involved section ––––––––––––––––––––*/
+    .get-involved-s {
+        max-width: 90%;
+        margin: -4rem auto 4rem auto;
+    }
+
     /* -----------permanent exhibitions----------- */
     .media-scroller {
         display: grid;
@@ -1084,5 +1113,4 @@ do only logo */
     .article1 {
         margin: 0 auto 4rem auto;
     }
-
 }
