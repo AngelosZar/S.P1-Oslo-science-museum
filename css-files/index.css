@@ -290,7 +290,6 @@ h6 {
 p {
     font-size: 1.8rem;
     font-weight: 400;
-    /* margin: var(--spacing-md); */
     line-height: 1.2;
 }
 
@@ -303,8 +302,8 @@ hr {
 /* –––––––––––––––––––––––––––––––––––––primary-button––––––––––––––––––––––––––––––––––––– */
 .primary-button {
     font-family: var(--second-font);
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 400;
     background-color: var(--button-primary);
     color: var(--text-white);
     padding: 0.3em 1em;
@@ -697,16 +696,17 @@ footer li h6 {
 /* ------------------------------------ ** main ** -----------------------------------------
 -------------------------------------------------------------------------------------------- */
 /* –––––––––––––––––––– hero section ––––––––––––––––––––*/
-/* .hero-section {
-    min-height: 70vh;
+/* .hero-sectionvideo>video {
+    min-height: 80vh;
     width: auto;
+    object-fit: contain;
 } */
 
 .article-onHero {
     background-color: var(--background-black);
     color: var(--text-white);
     padding: 8% 5%;
-    margin: 0 auto 10% auto;
+    margin: 0 auto 5% auto;
     text-align: center;
 }
 
@@ -826,7 +826,7 @@ do only logo */
 
 @media(max-width: 67rem) {
     .logo img {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -1043,6 +1043,7 @@ do only logo */
 @media only screen and (max-width:599px) {
     nav {
         top: 100px;
+        padding: 2rem 6rem;
     }
 
     /* -----------flex containers-two column layouts----------- */
@@ -1077,6 +1078,11 @@ do only logo */
         padding: 0.5rem 2rem;
     }
 
+    .logo-on-footer {
+        padding: 2rem 2rem;
+        align-self: flex-end;
+    }
+
     .newsletter-on-footer h3 {
         padding-right: 1rem;
     }
@@ -1091,11 +1097,19 @@ do only logo */
     .media-scroller {
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 72%;
+        grid-auto-columns: 94%;
     }
 
     .newsletter-on-footer span:last-child {
         padding-left: 0rem;
+    }
+
+    /* -----------special events andexhibitions----------- */
+    .media-scroller-vertical.scroll-2img {
+        grid-auto-flow: column;
+        grid-auto-columns: 47%;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
     }
 
     /* -----------flex containers-two column layouts----------- */

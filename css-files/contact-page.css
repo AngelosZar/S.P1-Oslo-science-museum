@@ -306,7 +306,8 @@ hr {
 }
 
 p {
-    line-height: 1.4;
+    font-size: 1.8rem;
+    line-height: 1.2;
 }
 
 /* ------------------------------------ ** header ** -----------------------------------------
@@ -449,8 +450,8 @@ footer li h6 {
 -------------------------------------------------------------------------------------------- */
 .primary-button {
     font-family: var(--second-font);
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 400;
     background-color: var(--button-primary);
     color: var(--text-white);
     padding: 0.3em 1em;
@@ -839,10 +840,9 @@ do only logo */
 
 @media(max-width: 67rem) {
     .logo img {
-        width: 90%;
+        width: 100%;
     }
 }
-
 
 @media(max-width: 30rem) {
     .logo {
@@ -852,7 +852,6 @@ do only logo */
         display: flex;
     }
 }
-
 
 @media(max-width: 67rem) {
     .burger-icon {
@@ -1000,6 +999,10 @@ do only logo */
         top: 120px;
     }
 
+    .Admission-s p {
+        padding: 0;
+    }
+
     .caffe-section h2 {
         font-size: var(--h3-size);
     }
@@ -1037,6 +1040,7 @@ do only logo */
 @media only screen and (max-width:599px) {
     nav {
         top: 100px;
+        padding: 2rem 6rem;
     }
 }
 
@@ -1069,6 +1073,11 @@ do only logo */
 
     .newsletter-on-footer span:last-child {
         padding-left: 0rem;
+    }
+
+    .logo-on-footer {
+        padding: 2rem 2rem;
+        align-self: flex-end;
     }
 
     /* -----------main----------- */

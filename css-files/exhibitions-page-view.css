@@ -293,10 +293,9 @@ h6 {
 
 /* check how it looks in the end resault */
 p {
-    font-size: 1.rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    margin: var(--spacing-md);
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 hr {
@@ -441,8 +440,8 @@ footer li h6 {
 -------------------------------------------------------------------------------------------- */
 .primary-button {
     font-family: var(--second-font);
-    font-size: 1.3em;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 400;
     background-color: var(--button-primary);
     color: var(--text-white);
     padding: 0.3em 1em;
@@ -706,7 +705,7 @@ h4 {
 }
 
 .article1.second {
-    margin: 8rem auto 8rem auto;
+    margin: 8rem auto -1rem auto;
 }
 
 article {
@@ -755,6 +754,7 @@ h3 {
     font-weight: 500;
 }
 
+
 /*--------------------------------------- media quarries-------------------------------------------
 ---------------------------------------------------------------------------------- */
 
@@ -763,10 +763,9 @@ do only logo */
 
 @media(max-width: 67rem) {
     .logo img {
-        width: 90%;
+        width: 100%;
     }
 }
-
 
 @media(max-width: 30rem) {
     .logo {
@@ -776,7 +775,6 @@ do only logo */
         display: flex;
     }
 }
-
 
 @media(max-width: 67rem) {
     .burger-icon {
@@ -930,6 +928,7 @@ do only logo */
 @media only screen and (max-width:599px) {
     nav {
         top: 100px;
+        padding: 2rem 6rem;
     }
 
     /* -----------flex containers-two column layouts----------- */
@@ -968,6 +967,11 @@ do only logo */
         font-size: 1.6rem;
         font-weight: 500;
         padding: 0.5rem 2rem;
+    }
+
+    .logo-on-footer {
+        padding: 2rem 2rem;
+        align-self: flex-end;
     }
 
     /* ---------------hero entry text ---------------*/
