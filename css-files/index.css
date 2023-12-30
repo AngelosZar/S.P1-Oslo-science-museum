@@ -705,6 +705,7 @@ footer li h6 {
 .article-onHero {
     background-color: var(--background-black);
     color: var(--text-white);
+
     padding: 8% 5%;
     margin: 0 auto 5% auto;
     text-align: center;
@@ -836,6 +837,7 @@ do only logo */
         margin: 1rem;
         max-height: 100px;
         display: flex;
+        padding: 0;
     }
 }
 
