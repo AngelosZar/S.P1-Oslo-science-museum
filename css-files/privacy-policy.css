@@ -342,7 +342,11 @@ nav,
 }
 
 nav a:hover {
-    color: var(--background-green);
+    color: var(--button-primary);
+}
+
+nav a:checked {
+    color: #E2FF8C;
 }
 
 nav a {
