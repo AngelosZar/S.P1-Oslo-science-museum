@@ -1,5 +1,5 @@
 
-Oslo science museum is an interactive static web-site that has been built with HTML and CSS .
+Oslo museum of science is an interactive static web-site that has been built with HTML and CSS .
 The luck of javascript use is intentional and all interactivity is 'faked'  with css.
 The reasoning behind this project is to showcase the importance of semantic HTML and importance as welll as how far can  CSS assist ti interactivity ,always trying to apply The DRY principle.
 
